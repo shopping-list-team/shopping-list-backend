@@ -25,7 +25,7 @@ SECRET_KEY = 'yqd9(8=#am(s190@#2nlp!-qm!p&ptz!@*8p3y5^*1^r2yu53f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'shopping_list.apps.ShoppingListConfig'
 ]
 
 MIDDLEWARE = [
